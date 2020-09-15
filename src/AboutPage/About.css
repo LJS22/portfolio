@@ -1,0 +1,171 @@
+.aboutPage {
+  width: 100vw;
+  height: 98vh;
+  background-color: #e27d60;
+}
+
+.aboutTitle {
+  width: 100%;
+  height: 25%;
+}
+
+.lists {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  font-size: 20px;
+}
+
+.personalList {
+  width: 50%;
+  height: 100%;
+}
+
+.workList {
+  width: 50%;
+  height: 400px;
+  position: absolute;
+  margin-left: 50%;
+  margin-bottom: 25%;
+}
+
+.iconImages {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+}
+
+.toolBoxTitle {
+  width: 100%;
+  height: 7%;
+  margin-bottom: 20px;
+}
+
+.toolTitle {
+  font-size: 20px;
+  text-align: center;
+}
+
+.box {
+  width: 30%;
+  height: 50%;
+}
+
+.box:hover {
+  animation: Shake 2s infinite;
+}
+
+.htmlBox {
+  background-image: url("../Images/html.png");
+  background-size: 70% 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cssBox {
+  background-image: url("../Images/cssImage.png");
+  background-size: 45% 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jsBox {
+  background-image: url("../Images/JSImage.png");
+  background-size: 110% 70%;
+  background-repeat: no-repeat;
+  background-position: 0% 70%;
+}
+
+.reactBox {
+  background-image: url("../Images/ReactLogo.png");
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reactBox:hover {
+  animation: Rotate 2s infinite;
+}
+
+.nodeBox {
+  background-image: url("../Images/NodeJS.png");
+  background-size: 85% 35%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mongoBox {
+  background-image: url("../Images/MongoDB.png");
+  background-size: 85% 35%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+}
+
+li {
+  list-style: none;
+  margin: 15px;
+  padding: 0;
+}
+
+@keyframes Shake {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes Rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutPage {
+    height: 100vh;
+  }
+  .aboutTitle {
+    display: none;
+  }
+  .lists {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .personalList,
+  .workList {
+    height: 50%;
+    width: 100%;
+  }
+  .personalList {
+    font-size: 15px;
+  }
+  .workList {
+    position: static;
+    margin: 30px;
+  }
+  .toolBoxTitle {
+    display: none;
+  }
+}

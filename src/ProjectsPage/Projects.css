@@ -1,0 +1,152 @@
+.projectPage {
+  width: 100vw;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #c38d9e;
+}
+
+.projectTitle {
+  width: 100%;
+  height: 25%;
+}
+
+.projects {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projectBox {
+  width: 28%;
+  height: 40%;
+  border-radius: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projectBox:hover {
+  animation: ProjectShake 2s infinite;
+}
+
+.projectBox p {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.bmiBox {
+  background-image: url("../Images/BMI.png");
+  background-size: 60% 100%;
+  background-position: center;
+}
+
+.calcBox {
+  background-image: url("../Images/Calculator.jpg");
+  background-size: 40% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.diceBox {
+  background-image: url("../Images/Dice.png");
+  background-size: 40% 100%;
+  background-position: center;
+}
+
+.drumBox {
+  background-image: url("../Images/Drum.png");
+  background-size: 65% 100%;
+  background-position: center;
+}
+
+.todoBox {
+  background-image: url("../Images/ToDo.png");
+  background-size: 50% 100%;
+  background-position: center;
+}
+
+.surmanBox {
+  background-image: url("../Images/Surman.png");
+  background-size: 100% 80%;
+  background-position: center;
+}
+
+.linkSpan {
+  position: absolute;
+  width: 370px;
+  height: 155px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+@keyframes ProjectShake {
+  0% {
+    transform: rotate(5deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projectPage {
+    height: 100vh;
+  }
+  .projectTitle {
+    font-size: 24px;
+    text-align: center;
+  }
+  .projectBox {
+    width: 40%;
+    height: 30%;
+    border-radius: 0%;
+  }
+
+  .bmiBox,
+  .calcBox,
+  .diceBox,
+  .drumBox,
+  .todoBox,
+  .surmanBox {
+    background-position: right bottom;
+  }
+
+  .bmiBox {
+    background-size: 45% 60%;
+  }
+
+  .calcBox {
+    background-size: 35% 60%;
+  }
+
+  .diceBox {
+    background-size: 40% 70%;
+  }
+
+  .drumBox {
+    background-size: 47.5% 65%;
+  }
+
+  .todoBox {
+    background-size: 40% 60%;
+  }
+
+  .surmanBox {
+    background-size: 80% 40%;
+  }
+  .projectBox p {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}

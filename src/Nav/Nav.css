@@ -1,0 +1,37 @@
+.navBar {
+  height: 50px;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #41b3a3;
+  z-index: 1;
+}
+
+.scrolled {
+  position: fixed;
+}
+
+.navBar button {
+  width: 15%;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 1s;
+}
+
+.navBar button:hover {
+  text-shadow: 2px 2px #888;
+  background-color: #85dcb8;
+  transition: 1s;
+}
+
+.navBar button:active {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .navBar {
+    display: none;
+  }
+}
