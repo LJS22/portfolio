@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ljs22.github.io/LJStobbartPortfolio/",
-  "name": "myportfolio",
+  "homepage": "https://ljs22.github.io/portfolio/",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
