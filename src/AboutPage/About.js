@@ -3,12 +3,12 @@ import "./About.css";
 
 class About extends Component {
   state = {
-    screenSize: false,
+    screenSize: true,
   };
 
   componentDidMount() {
-    if (window.screen.width < 768) {
-      this.setState({ screenSize: true });
+    if (window.screen.width < 280) {
+      this.setState({ screenSize: false });
     }
   }
 
@@ -16,17 +16,20 @@ class About extends Component {
     return (
       <section className="aboutPage" id="section2">
         <div className="aboutTitle">
-          <h2>Me, Myself & I</h2>
+          <h2 id="aboutTitle">Me & My Tech</h2>
         </div>
         <main className="lists">
           <div className="personalList">
             <ul>
-              <li>
-                I was born and raised in Newcastle, live and work in Manchester
-              </li>
+              {this.state.screenSize ? (
+                <li>
+                  I was born and raised in Newcastle, live and work in
+                  Manchester
+                </li>
+              ) : null}
               <li>
                 I attended Newcastle University, studying Psychology before
-                becoming a software developer
+                moving to Manchester and becoming a software developer
               </li>
               {this.state.screenSize ? (
                 <li>
@@ -44,16 +47,13 @@ class About extends Component {
             </ul>
           </div>
           <div className="workList">
-            <div className="toolBoxTitle">
-              <p className="toolTitle">My Toolbox consists of:</p>
-            </div>
             <div className="iconImages">
-              <div className="box htmlBox"></div>
-              <div className="box cssBox"></div>
-              <div className="box jsBox"></div>
-              <div className="box reactBox"></div>
-              <div className="box nodeBox"></div>
-              <div className="box mongoBox"></div>
+              <div className="htmlCssJsBox"></div>
+              <div className="box reactBox middle"></div>
+              <div className="box nodeBox middle"></div>
+              <div className="box mongoBox middle"></div>
+              <div className="box gitBox"></div>
+              <div className="box insomniaBox"></div>
             </div>
           </div>
         </main>

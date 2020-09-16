@@ -3,13 +3,27 @@ import "./HomePage.css";
 
 class HomePage extends Component {
   handleAbout = () => {
-    window.scrollTo({ top: 600, behavior: "smooth" });
+    if (window.screen.width < 280) {
+      window.scrollTo({ top: 672, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 600, behavior: "smooth" });
+    }
   };
+
   handleProject = () => {
-    window.scrollTo({ top: 1200, behavior: "smooth" });
+    if (window.screen.width < 280) {
+      window.scrollTo({ top: 1344, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 1200, behavior: "smooth" });
+    }
   };
+
   handleContact = () => {
-    window.scrollTo({ top: 1850, behavior: "smooth" });
+    if (window.screen.width < 280) {
+      window.scrollTo({ top: 2500, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 2016, behavior: "smooth" });
+    }
   };
 
   render() {

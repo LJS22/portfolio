@@ -6,7 +6,6 @@ import HomePage from "./HomePage/HomePage";
 import About from "./AboutPage/About";
 import Projects from "./ProjectsPage/Projects";
 import Contact from "./ContactPage/Contact";
-import PageButton from "./PageButtons/PageButton";
 
 class App extends Component {
   render() {
@@ -14,11 +13,10 @@ class App extends Component {
       <div className="App">
         <LandingPage />
         <Nav />
-        <HomePage ref={this.props.homeRef} />
+        <HomePage />
         <About />
         <Projects />
         <Contact />
-        <PageButton />
       </div>
     );
   }

@@ -8,7 +8,7 @@ class Nav extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 50;
+      const isTop = window.scrollY < 1;
       if (isTop !== true) {
         this.setState({ scrolled: true });
       } else {

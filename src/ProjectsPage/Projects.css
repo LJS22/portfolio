@@ -99,14 +99,26 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .projectPage {
-    height: 100vh;
+@media only screen and (max-width: 882px) {
+  .projectTitle {
+    font-size: 88px;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .projectTitle {
+    font-size: 66px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .projectTitleDiv {
+    margin-right: 30px;
   }
   .projectTitle {
-    font-size: 24px;
-    text-align: center;
+    font-size: 36px;
   }
+
   .projectBox {
     width: 40%;
     height: 30%;
@@ -120,6 +132,7 @@
   .todoBox,
   .surmanBox {
     background-position: right bottom;
+    margin-right: 0px;
   }
 
   .bmiBox {

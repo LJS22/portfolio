@@ -7,6 +7,7 @@
 .aboutTitle {
   width: 100%;
   height: 25%;
+  margin: 0;
 }
 
 .lists {
@@ -19,62 +20,46 @@
 .personalList {
   width: 50%;
   height: 100%;
+  margin-top: -40px;
 }
 
 .workList {
   width: 50%;
-  height: 400px;
+  height: 95%;
   position: absolute;
   margin-left: 50%;
-  margin-bottom: 25%;
+  margin-top: -160px;
 }
 
 .iconImages {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-  height: 90%;
-}
-
-.toolBoxTitle {
-  width: 100%;
-  height: 7%;
-  margin-bottom: 20px;
-}
-
-.toolTitle {
-  font-size: 20px;
-  text-align: center;
+  height: 100%;
 }
 
 .box {
   width: 30%;
-  height: 50%;
+  height: 33%;
 }
 
 .box:hover {
-  animation: Shake 2s infinite;
+  animation: Shake 2s;
 }
 
-.htmlBox {
-  background-image: url("../Images/html.png");
-  background-size: 70% 85%;
+.htmlCssJsBox {
+  height: 33%;
+  width: 100%;
+  background-image: url("../Images/HTMLCSSJS.png");
+  background-size: 28% 100%;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 20px;
 }
 
-.cssBox {
-  background-image: url("../Images/cssImage.png");
-  background-size: 45% 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.jsBox {
-  background-image: url("../Images/JSImage.png");
-  background-size: 110% 70%;
-  background-repeat: no-repeat;
-  background-position: 0% 70%;
+.htmlCssJsBox:hover {
+  animation: Shake 2s;
 }
 
 .reactBox {
@@ -85,7 +70,7 @@
 }
 
 .reactBox:hover {
-  animation: Rotate 2s infinite;
+  animation: Rotate 2s;
 }
 
 .nodeBox {
@@ -102,6 +87,24 @@
   background-position: center;
 }
 
+.gitBox {
+  background-image: url("../Images/GitLogo.png");
+  background-size: 85% 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.insomniaBox {
+  background-image: url("../Images/Insomnia.png");
+  background-size: 60% 47%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.insomniaBox:hover {
+  animation: Rotate 2s;
+}
+
 ul {
   display: flex;
   flex-direction: column;
@@ -110,7 +113,7 @@ ul {
 
 li {
   list-style: none;
-  margin: 15px;
+  margin: 10px;
   padding: 0;
 }
 
@@ -141,31 +144,137 @@ li {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
+  .htmlCssJsBox {
+    background-position: 75% 0%;
+    margin-bottom: -8px;
+  }
+  .box {
+    margin: -5px;
+  }
+}
+
+@media only screen and (max-width: 882px) {
+  #aboutTitle {
+    font-size: 88px;
+  }
+  .htmlCssJsBox {
+    background-position: center;
+    padding-top: 80px;
+    background-size: 28% 80%;
+  }
+  .lists {
+    align-items: center;
+  }
+  .aboutTitle {
+    margin-bottom: -5px;
+  }
+  .workList {
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 693px) {
+  #aboutTitle {
+    font-size: 77px;
+  }
+  li {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  #aboutTitle {
+    font-size: 66px;
+  }
+  .lists {
+    font-size: 16px;
+  }
+  .personalList,
+  .workList {
+    margin-top: -170px;
+  }
+  .htmlCssJsBox {
+    padding-top: 40px;
+    background-size: 28% 70%;
+  }
+}
+
+@media only screen and (max-width: 544px) {
+  #aboutTitle {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 507px) {
+  li {
+    font-size: 15px;
+  }
+  .mongoBox,
+  .nodeBox {
+    background-size: 95% 22%;
+  }
+  .reactBox {
+    background-size: 65% 35%;
+  }
+}
+
+@media only screen and (max-width: 490px) {
   .aboutPage {
     height: 100vh;
   }
   .aboutTitle {
-    display: none;
+    height: 10%;
+    margin-bottom: 0px;
+  }
+  #aboutTitle {
+    font-size: 36px;
   }
   .lists {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .personalList,
   .workList {
     height: 50%;
     width: 100%;
+    margin-top: 0px;
   }
   .personalList {
     font-size: 15px;
+    margin: 0px;
   }
   .workList {
     position: static;
-    margin: 30px;
+    margin-left: 0px;
   }
   .toolBoxTitle {
     display: none;
+  }
+  .htmlCssJsBox {
+    height: 30%;
+    background-size: 20% 100%;
+    padding: 0px;
+  }
+
+  .reactBox {
+    background-size: 50% 50%;
+    margin-right: -25px;
+  }
+
+  .nodeBox {
+    background-size: 85% 25%;
+  }
+
+  .mongoBox {
+    background-size: 90% 35%;
+  }
+}
+
+@media only screen and (max-width: 329px) {
+  .workList {
+    margin-top: 47px;
   }
 }

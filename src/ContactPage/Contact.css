@@ -85,29 +85,76 @@ a:active {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
+  .mainContact {
+    height: 50%;
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 882px) {
+  #contactTitle {
+    font-size: 88px;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  #contactTitle {
+    font-size: 66px;
+  }
+  .mainContact {
+    margin-top: 100px;
+  }
+  .email {
+    background-size: 40% 80%;
+  }
+  .linkedin {
+    background-size: 40% 60%;
+  }
+  .github {
+    background-size: 60% 70%;
+    margin-left: 80px;
+  }
+  .contactDivs p {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
   .contacts {
-    height: 100vh;
+    height: 35vh;
   }
   .contactTitle {
     height: 10%;
-    margin-bottom: 25px;
+    margin-bottom: -50px;
   }
   #contactTitle {
     font-size: 24px;
-    text-align: center;
   }
   .mainContact {
     height: 90%;
   }
   .contactIcon {
-    height: 50%;
-    margin-top: 40px;
+    display: none;
   }
   .contactDivs p {
-    font-size: 20px;
+    font-size: 18px;
+    margin: 0px 0px 0px 10px;
+  }
+  .linkedin {
+    background-size: 40% 70%;
   }
   .github {
     background-size: 90% 90%;
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 384px) {
+  #contactTitle {
+    font-size: 20px;
+  }
+  .contactDivs p {
+    font-size: 14px;
   }
 }
