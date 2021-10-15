@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Web Dev Centre</title>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li data-target="aboutMe">About me</li>
+				<li data-target="whyMe">Why me</li>
+				<li data-target="myWork">My work</li>
+				<li data-target="getInTouch">Get in touch</li>
+			</ul>
+		</nav>
+
+		<div id="pageContainer">
+			<section class="page" id="landing">
+				<canvas id="scene"></canvas>
+			</section>
+
+			<section class="page" id="aboutMe" data-target="aboutMe">
+				<div class="pageBorder">
+					<div id="aboutMeTextContainer">
+						<div class="oneLine">
+							<span id="mancBee"></span>
+							<p class="aboutMeText">
+								Hey! I'm Luke, a web developer based in
+								Manchester
+							</p>
+						</div>
+						<div class="oneLine">
+							<p class="aboutMeText">
+								I design and develop digital experiences that
+								simplify people's lives
+							</p>
+							<span class="material-icons" id="codeIcon">
+								code
+							</span>
+						</div>
+						<div class="oneLine">
+							<span class="material-icons" id="codeIcon">
+								account_circle
+							</span>
+							<p class="aboutMeText">
+								I want to help you realise your goals and ideas
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page" id="whyMe" data-target="whyMe">
+				<div class="pageBorder">
+					<div id="whyMeTextContainer">
+						<h2>Reliable</h2>
+						<p>
+							I only take on a couple projects at a time, ensuring
+							I can be there for you
+						</p>
+						<h2>Flexible</h2>
+						<p>I can work to your schedule, day or night</p>
+						<h2>Passionate</h2>
+						<p>I love what I do....</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="page" id="myWork" data-target="myWork">
+				<div class="pageBorder"></div>
+			</section>
+
+			<section class="page" id="getInTouch" data-target="getInTouch">
+				<div class="pageBorder"></div>
+			</section>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="particle.js"></script>
+		<script src="ui_functions.js"></script>
+	</body>
+</html>
